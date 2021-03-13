@@ -1,7 +1,68 @@
-Halal-Bot Is Smarter Than You!
+# Tugas 1  Sistem Pakar Semester 6 DIV Teknik Informatika 3A
 
-Authors: Matthew Kearns and Ahmed Youssef.
+Lecturer/Dosen :  M Nurkamal Fauzan, S.T., M.T.
 
+Name/Nama : * **Rizaluardi Achmad Pratama** - *1184102* - [rizaluardi](https://github.com/rizaluardi)
+
+Npm : 1184102
+
+
+## Halal-Bot Is Smarter Than You!
+
+Authors: Matthew Kearns and Ahmed Youssef.- [mdkearns](https://github.com/mdkearns/expert-system-shell)
+
+## Indonesia Explanation:
+
+Berikut merupakan sistem pakar sederhana yang mempelajari informasi untuk menjawab
+pertanyaan seputar yang ditanyakan dalam console. dengan menggunakan forward chaining
+untuk mempelajari role/rules yang diberikan dan variabel yang disediakan oleh pengguna
+(baik sistem root atau sistem learned), dan digunakan backward chaining untuk membuat
+penjelasan terkait inputan yang diberikan ke values dari variabel dalam sistem dan rules.
+
+perbedaan dari variabel root dan variabel learned adalah:
+
+variabel root adalah variabel yang nilai kebenarannya diketahui oleh
+user, dan user dapat men-set value menjadi benar atau salah
+value yang benar merupakan variabel dari learned, bagaimanapun, tergantung pada aturan
+sistem dan nilai variabel root yang bergatung padanya
+
+## Petunjuk penggunaan:
+```
+1. Teach [-R/-L] Var = String
+Mengajari sistem untuk menulis dan membuat value dari variabel
+
+2. Teach Var = [True/False]
+Mengajari sistem kebenaran value dalam variabel
+
+3. Teach Expression -> Var
+Mengajari sistem untuk membuat rule baru
+
+4. List
+Melihat list dari value dari semua variabel root dan learned
+Serta membuat list dari current rules dan learned rules di dalam sistem
+
+5. Learn
+Membuat rules baru berdasarkan aturan yang sudah disediakan dalam sistem
+dan memperbarui values dari kebenaran variabel berdasarkan rules
+
+6. Query Expression
+Kueri yang mengembalikan nilai kebenaran values dari ekspresi berdasarkan semua
+aturan dan variabel saat ini dalam sistem
+
+7. Why Expression
+Memberikan penjelasan mengapa ekspresi yang disediakan user itu true atau false
+mengingat rule saat ini dan nilai variabel yang dipegang oleh sistem
+
+Kunci:
+-R = variable root
+-L = variable learned
+Var = user-defined variable name
+String = A string of the form "Today is Monday" or "Matt likes ice cream"
+Expression = Any valid expression of the form A&B->C or (!((A|B))&C)->D
+```
+
+
+## English Explanation
 
 Brief Explanation:
 
